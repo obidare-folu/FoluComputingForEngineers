@@ -1,0 +1,3 @@
+Experiment duration:	90
+Voltage step:	0.012890625
+Sampling Frequency:	207.9777777777778
