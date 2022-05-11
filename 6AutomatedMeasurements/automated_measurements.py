@@ -84,7 +84,6 @@ try:
     with open("settings.txt", 'w') as settingsfile:
         settingsfile.write("Experiment duration:\t{}\n".format(str(round(discharge_time - start_charging_time))))
         settingsfile.write("Voltage step:\t{}\n".format(str(3.3 / 256)))
-        settingsfile.write("Sampling Frequency:\t{}".format(str(len(digital_values) / round(discharge_time - fully_charged_time))))
 
     plt.plot(digital_values)
     plt.show()
