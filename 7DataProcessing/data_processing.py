@@ -18,7 +18,7 @@ try:
     title = 'The process of charging and discharging a capacitor in an RC circuit'
     ax.set_title(title, loc='center', wrap=True)
 
-    graph = ax.plot(time, voltages, 'g.', linestyle='-', label="Voltage")
+    graph = ax.plot(time, voltages, 'g.', linestyle='-', label="Voltage", markevery=200, markersize=20)
 
     # grid
     xticks = np.arange(0, 100, 10)
@@ -51,8 +51,7 @@ try:
     # save file
     fig.savefig("graph.svg")
 
-    plt.show()
+    # plt.show()
 
 finally:
-    datafile.close()
     settingsfile.close()
